@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/js-logo-sm.png">
+    <title>javascript</title>
+</head>
+<body>
+    <p id="js1">hello world</p>
+    <button type="button" onclick="document.getElementById('js1').innerHTML = 'hello javascript'">click me</button>
+    <br>
+    <p id="js2">font size</p>
+    <button type="button" onclick="document.getElementById('js2').style.fontSize = ('35px')">click me</button>
+    <p id="js3">click the button under this text to make it disappear</p>
+    <button type="button" onclick="document.getElementById('js3').style.display = ('none')">click me</button>
+    <br>
+    <p id="js4" style="display: none;">hidden text</p>
+    <button type="button" onclick="document.getElementById('js4').style.display = ('block')">click me</button>
+    <br>
+    <p id="js5"></p>
+    <script>
+        document.getElementById('js5').innerHTML = "just some text";
+    </script>
+    <br>
+    <p id="js6">changing paragraph with function</p>
+    <button type="button" onclick="jsf1()">click me</button>
+    <script>
+        function jsf1() {
+            document.getElementById('js6').innerHTML = "paragraph changed";
+        }
+    </script>
+    <br>
+    <!--<script>
+        alert ("nothing");
+    </script> -->
+    <br>
+    <button onclick="print()">click to print this page</button>
+    <p id="js7"></p>
+
+</html>

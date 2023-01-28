@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Param html</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<style>
+    p.xyz {
+        outline: silver solid 10px;
+    }
+
+    body {
+        background-image: url("alien.gif");
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 210px;
+        background-attachment: fixed;
+    }
+
+    body {
+        background-image: url("alien.gif");
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 210px;
+        background-attachment: scroll;
+    }
+
+    p.dotted {
+        border-style: dotted;
+    }
+
+    p.dashed {
+        border-style: dashed;
+    }
+
+    p.solid {
+        border-style: solid;
+    }
+
+    p.double {
+        border-style: double;
+    }
+
+    p.groove {
+        border-style: groove;
+    }
+
+    p.ridge {
+        border-style: ridge;
+    }
+
+    p.inset {
+        border-style: inset;
+    }
+
+    p.outset {
+        border-style: outset;
+    }
+
+    p.mix {
+        border-style: dotted dashed solid double;
+    }
+
+    p.ex1 {
+        margin-left: inherit;
+    }
+
+    div.ex2 {
+        width: 300px;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: lightgray
+    }
+
+    div {
+        max-width: 400px;
+        height: 100px;
+    }
+
+    p.ex3 {
+        border: teal solid;
+        outline-style: dotted;
+        outline-color: thistle;
+    }
+
+    p.ex4 {
+        border: rebeccapurple;
+        outline-style: solid;
+        outline-color: invert;
+    }
+
+    p.ex5 {
+        margin: 30px;
+        border: 1px solid black;
+        outline: 1px solid goldenrod;
+        outline-offset: 20px;
+    }
+
+    p.ex6 {
+        text-align: left;
+    }
+
+    p.ex7 {
+        text-align: center;
+    }
+
+    p.ex8 {
+        text-align: right;
+    }
+
+    div.a {
+        text-align: justify;
+        border: 2px solid red;
+        padding: 10px;
+        width: 300px;
+        height: 200px;
+        background-color: black;
+        color: white;
+    }
+
+    img.a1 {
+        vertical-align: baseline;
+    }
+
+    img.a2 {
+        vertical-align: text-top;
+    }
+
+    img.a3 {
+        vertical-align: text-bottom;
+    }
+
+    img.a4 {
+        vertical-align: sub;
+    }
+
+    img.a5 {
+        vertical-align: super;
+    }
+
+    p.b1 {
+        text-decoration: overline;
+    }
+
+    p.b2 {
+        text-decoration: line-through;
+    }
+
+    p.b3 {
+        text-decoration: underline;
+    }
+
+    p.g1 {
+        text-indent: 50px;
+    }
+
+    h2.h2o {
+        letter-spacing: 4px;
+    }
+
+    h1.h10 {
+        text-shadow: 2px 2px 4px red;
+    }
+
+    a.lk1 {
+        color: red;
+    }
+
+    a.lk2 {
+        background-color: black;
+    }
+
+    a.a:link {
+        color: blue;
+    }
+
+    a.a:visited {
+        color: orange;
+    }
+
+    a.a:hover {
+        color: red;
+    }
+
+    a.a:active {
+        color: blue;
+    }
+
+    a.b:link,
+    a.b:visited {
+        background-color: darkturquoise;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    ol.ol {
+        background: red;
+        padding: 20px;
+    }
+
+    ul.ul {
+        background: blue;
+        padding: 20px;
+    }
+
+    ol.ol li {
+        background: darkslategrey;
+        padding: 5px;
+        margin-left: 35px;
+    }
+
+    ul.ul li {
+        background: darkslategrey;
+        margin: 5px;
+    }
+
+    div.e1 {
+        width: 500px;
+        margin: 5spx;
+        border: 3px solid darkcyan;
+        background-color: darkred;
+    }
+
+    div.e2 {
+        max-width: 500px;
+        margin: 5px;
+        border: 3px solid darkcyan;
+        background-color: darkred;
+    }
+
+    h1.oh1 {
+        opacity: 0.5;
+    }
+</style>
+
+<body>
+
+    <body style="background-color: grey;" <h1>This is heading</h1>
+        <p>This is paragraph</p>
+        <a href="https://www.youtube.com">This is a link to Youtube</a>
+        <p>This is an image</p>
+        <img src="https://i.ytimg.com/vi/1roy4o4tqQM/maxresdefault.jpg" width="610" height="400">
+        <h2 style="color:red;">This is red heading</h2>
+        <P>This is a paragraph <br> with line break</P>
+        <p style="color:red;">This is a Red paragraph.</p>
+        <p style="color:blue;">This is a Blue paragraph.</p>
+        <h2 title="I'm a header">Mouse over this heading to see a text written as I'm a header</h2>
+        <p title="I'm a tooltip">Mouse over this paragraph to see a text written as I'm a tooltip</p>
+        <h2>single and double quates</h2>
+        <p>Move your mouse over the paragraphs below to see the effect</p>
+        <p title='John "ShotGun" Nelson'>John with double quotes</p>
+        <p title="John 'ShotGun' Nelson">John with single quotes</p>
+        <h1>This is heading1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+        <h1 style="font-size:60px;">This is heading with bigger text</h1>
+        <h1>this is some heading</h1>
+        <p>This is some text</p>
+        <hr>
+        <h2>This is some another heading</h2>
+        <p>This is some another text</p>
+        <hr>
+        <h2>This is poem without pre tag</h2>
+            <p>Twinkle, twinkle, little star,
+            How I wonder what you are.
+            Up above the world so high,
+            Like a diamond in the sky.
+            Twinkle, twinkle, little star,
+            How I wonder what you are!
+         </p> 
+        <hr>
+        <h2>This is a poem with pre tag</h2>
+        <pre>
+    Twinkle, twinkle, little star,
+    How I wonder what you are.
+    Up above the world so high,
+    Like a diamond in the sky.
+    Twinkle, twinkle, little star,
+    How I wonder what you are!
+</pre> 
+        <hr>
+        <h1 style="font-family:'Courier New', Courier, monospace;">This is a heading with different font</h1>
+        <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">This is paragraph with
+            differrent font</p>
+        <hr>
+        <!--This is comment-->
+        <h2 style="text-align:center">This is a heading in centre</h2>
+        <P style="text-align:center">This is a paragraph in centre</P>
+        <hr>
+        <p><b>this is bold text</b> - This text is normal</p>
+        <p><i>This is italic text</i> - this text is normal</p>
+        <p><sub>This is subscript text</sub> - this text i normal</p>
+        <p><sup>This is supercript text</sup>-This text is normal</p>
+        <P><strong>this is strong text</strong> -this text is normal</P>
+        <p><sub>This</sub><sup>text</sup><sub>is</sub><sup>mix</sup><sub>of</sub><sup>subscript</sup><sub>text</sub><sup>and</sup><sub>superscipt</sub><sup>text</sup>
+        </p>
+        <p><em>This is emphasized text</em>- This is normal text</p>
+        <p><small>This text is small</small>-This text is normal</p>
+        <p>Do not forget to to buy <mark>milk</mark> today-in this text milk is highlighted</p>
+        <p>My favorate color is <del>red</del> black- in this text red is cutted</p>
+        <hr>
+        <p>
+        <blockquote>this is text with block with blockquate </b0lockquote>- this tag left some space before writing the
+            paragraph</p>
+            <P><q>My name is param</q>- when you use q tag i will show it as quates</P>
+            <p>The <abbr title="world health organization">WHO</abbr> was founded in 1948- if you mouse over text WHO it
+                will show you its fullform</p>
+            <hr>
+            <address>written by param.<Br>Visit us at:<Br>Something.com<br>c28 saharanpur<br>India</address>
+            <hr>
+            <P>My name is <cite>Param</cite></p>
+            <P><bdo dir="rtl">My name is param-this line will be written from right to left</bdo></P>
+            <p style="background: chocolate;">My name is Param</p>
+            <h1 style="border: 2px solid blue;">My name is Param</h1>
+            <h1 style="background-color: hsla(225,100%,70%,0.9);">This is a color maken by using hsla</h1>
+            <a href="https://www.youtube.com/" target="blank">This is a link to youtube but your will open it in new
+                tab</a>
+            <p><a href="html_images.asp">html images-</a>This is a link to html images and this is a relative
+                link,relative links are those which are without https and absolute links are those which are with https
+            </p>
+            <a href="https://www.youtube.com/"><img src="youtube.png" style="width: 100px;height: 1OOpx;"></a>
+            <p> If you click on the the image wich is above of this text then it will take you to youtube </p>
+            <hr>
+            <p>we can also add moving image in html</p>
+            <img src="gif.gif" width=":200;height:200;">
+            <p>
+                <img src="smiley.gif" style="float: right;width: 48px;height: 48px;">this is a paragraph with flaoting
+                image in right
+            </p>
+            </p>
+            <div style="background-image: url(jpeg.jpeg);">
+                we can also add a beackground image in html<br>
+                reszhtftduiygtjdkuygfchyygfthyjygctrhyjugfh<br>
+                y7utdrfytrfdjkugfkm hnjyjk,ugfdxhjmjfdzmjug<br>
+                fgygfgugfjmgmdkm,ufdjckmjrducklo,iyh;pyftdj<br>
+                ljhoiufacsidoykmcufJSKIEhbuhughuhuihy8eikrh<br></div>
+            <hr>
+            <picture>
+                <source media="(min-width:650px)" srcset="mount.jpg">
+                <source media="(min-width:465px )" srcset="jpeg.jpeg">
+                <img src="mount.jpg">
+                <img src="jpeg.jpeg">
+            </picture>
+            <hr>
+            <h2>this is a htlm table with text align to left</h2>
+            <caption>xyz</caption>
+            <table style="width: 100%;">
+                <tr>
+                    <th>First name</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                    <th colspan="2">abcd</th>
+                </tr>
+                <tr>
+                    <th>Param</th>
+                    <th>Pundir</th>
+                    <th rowspan="1">12</th>
+
+
+                </tr>
+                <tr>
+                    <th>Xyz</th>
+                    <th>Pundir</th>
+                    <th>60</th>
+                </tr>
+                <th>Zyx</th>
+                <th>Pundir</th>
+                <th>47</th>
+                <tr>
+                <tr>
+                    <th>yxz</th>
+                    <th>Pundir</th>
+                    <th>15</th>
+                </tr>
+            </table>
+            <hr>
+            <ul>
+                <li>this is an unordered list </li>
+                <li>My name is param</li>
+                <li>My name is xyz</li>
+            </ul>
+            <hr>
+            <ol>
+                <li>this is an ordered list</li>
+                <li>My name is Param</li>
+                <li>My name is xyz</li>
+            </ol>
+            <dl>this is a description list
+                <dd>-my name is param</dd>
+            </dl>
+            <ul style="list-style-type: disc;">
+                <li>this is an unordered list with disc</li>
+                <li>My name is param</li>
+                <li>My name is xyz</li>
+            </ul>
+            <hr>
+            <ul style="list-style-type: circle;">
+                <li>this is an unordered list with circle</li>
+                <li>My name is param</li>
+                <li>My name is xyz</li>
+            </ul>
+            <hr>
+            <un style="list-style-type: square;">
+                <li>this is an unordered list with square</li>
+                <li>My name is param</li>
+                <li>My name is xyz</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>this is an unordered list </li>
+                    <li>My name is param</li>
+                    <li>My name is xyz</li>
+                    <ul>
+                        <li>list can be also nested inside a list </li>
+                        <li>My name is param</li>
+                        <dl>this is a description list</dl>
+                        <dd>my name is param</dd>
+                        <ul style="list-style-type: disc;">
+                            <li>this is an unordered list with disc</li>
+                            <li>My name is param</li>
+                            <li>My name is xyz</li>
+                            <ul>
+                                <li>babmvhdgvcg</li>
+                                <li>juhcujbjuvd</li>
+                            </ul>
+                            <hr>
+                            <ol type="A">
+                                <li>this is an ordered list</li>
+                                <li>My name is Param</li>
+                                <li>My name is xyz</li>
+                            </ol>
+                            <hr>
+                            <ol type="a">
+                                <li>this is an ordered list</li>
+                                <li>My name is Param</li>
+                                <li>My name is xyz</li>
+                            </ol>
+                            <hr>
+                            <ol type="i">
+                                <li>this is an ordered list with lowercast roman numbers</li>
+                                <li>My name is Param</li>
+                                <li>My name is xyz</li>
+
+                            </ol>
+                            <hr>
+                            <ol type="I">
+                                <li>this is an ordered list with uppercast roman numbers</li>
+                                <li>My name is Param</li>
+                                <li>My name is xyz</li>
+                            </ol>
+                            <hr>
+                            <ol start="70">
+                                <li>this is an ordered list wich will start from 70</li>
+                                <li>My name is Param</li>
+                                <li>My name is xyz</li>
+                            </ol>
+                            <hr>
+                            <ol>
+                                <li>this is nested ordered list</li>
+                                <li>
+                                    <ol>
+                                        <li>My name is Param</li>
+                                        <li>My name is xyz</li>
+                                    </ol>
+                                </li>
+                                <li>xyz</li>
+                            </ol>
+                            <p class="xyz">this is a text outline</p>
+                            <p style="border: black;">My name is param- this line is in p tage </p>
+                            <span style="border: black;">my name is param-this is line in span tag</span>
+                            <p>my name
+                            <p>is param</p>
+                            <p>my name<span>is param</span></p>
+                            <iframe src="https://www.pibity.com/" height="250" width="265"
+                                title="Iframe Example"></iframe>
+                            <hr>
+                            <p class="dotted">this is a paragraph with dotted border</p>
+                            <p class="dashed">this is a paragraph with dashed border</p>
+                            <p class="solid">this is a paragraph with dashed border</p>
+                            <p class="double">this is a paragraph with double border</p>
+                            <P class="groove">this is a paragraph with groove border</P>
+                            <p class="ridge">this is a paragraph with ridge border</p>
+                            <p class="inset">this is a paragraph with inset border</p>
+                            <p class="outset">this is a paragraph with outset border</p>
+                            <p class="mix">this is a paragraph with mixed border</p>
+                            <hr>
+                            <div> this div is in center because its margin has been setted to auto</div>
+                            <div>
+                                <P class="ex1">This paragraph has inherited left margin from the div element</P>
+                            </div>
+                            <div class="ex2"> my name is param</div>
+                            <div>my name is param <br>
+                                resize the browser to see effect </div>
+                            <p class="ex3">this is paragraph with dotted colored outline</p>
+                            <hr>
+                            <p class="ex4">this is a paragraph's outine maken by using invert color </p>
+                            <hr>
+                            <p class="ex5">this paragraph has outile oss 10px it adds space between element</p>
+                            <p class="ex6">my name is param</p>
+                            <p class="ex7">my name is param</p>
+                            <p class="ex8">my name is param</p>
+                            <hr>
+                            <div class="a">
+                                my name is param dvyvgdcskiugftsdkuygvugtdcbjjgumnbvbv
+                                gkkjhgjknblkkljkin gtgbstcsybhav sb njhdskjhbskdnhksg
+                                jkjjjjjjjjj jjjjhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhjj jjjjjjd
+                                wggggggggg gggggggggggg ggggggggg ggggggg ggggggg gggg ggggg
+                            </div>
+                            <p>This is <img class="a1" src="dark.png" height="10" width="10"> an image image with
+                                default alignment </p>
+                            <p>This is <img class="a2" src="dark.png" height="10" width="10"> an image image with text
+                                top alignment </p>
+                            <p>This is <img class="a3" src="dark.png" height="10" width="10"> an image image with text
+                                bottom alignment </p>
+                            <p>This is <img class="a4" src="dark.png" height="10" width="10"> an image image with
+                                subscript alignment </p>
+                            <p>This is <img class="a5" src="dark.png" height="10" width="10"> an image image with
+                                supscript alignment </p>
+                            <hr>
+                            <p class="b1">this is paragraph with overline</p>
+                            <p class="b2">this is paragraph with line going through it</p>
+                            <p class="b3">this is paragraph with underline</p>
+                            <hr>
+                            <hr>
+                            <p class="g1">in this text i use text indent property and The text-indent property is used
+                                to specify the indentation of the first line of a text </p>
+                            <h1 class="oh1">This is some text with 0.5 0pacity</h1>
+                            <h2 class="h2o">This is heading with letter spacing off 4px</h2>
+                            <hr>
+                            <h1 class="h10">My name is Param this text is with shadow effect</h1>
+                            <hr>
+                            <a class="lk1" href="https://www.google.com/">this is a link to link to google in red
+                                color</a>
+                            <br>
+                            <a class="lk2" href="https://www.google.com/">this is a link to google with background color
+                                of black</a>
+                            <br>
+                            <a class="a" href="https://www.google.com/">my name is param</a><br>
+                            <a class="b" href="https://www.google.com/">My name is Param</a>
+                            <hr>
+                            <p style="cursor:auto">auto</p><br>
+                            <p style="cursor:crosshair">crosshair</p><br>
+                            <p style="cursor:default">default</p><br>
+                            <p style="cursor:e-resize">e-resize</p><br>
+                            <p style="cursor:help">help</p><br>
+                            <p style="cursor:move">move</p><br>
+                            <p style="cursor:n-resize">n-resize</p><br>
+                            <p style="cursor:ne-resize">ne-resize</p><br>
+                            <p style="cursor:nw-resize">nw-resize</p><br>
+                            <p style="cursor:pointer">pointer</p><br>
+                            <p style="cursor:progress">progress</p><br>
+                            <p style="cursor:s-resize">s-resize</p><br>
+                            <p style="cursor:se-resize">se-resize</p><br>
+                            <p style="cursor:sw-resize">sw-resize</p><br>
+                            <p style="cursor:text">text</p><br>
+                            <p style="cursor:w-resize">w-resize</p><br>
+                            <p style="cursor:wait">wait</p>
+                            <hr>
+                            <ol class="ol">
+                                <li>my name is param</li>
+                                <li>my name is param</li>
+                                <li>my name is param</li>
+                            </ol>
+                            <br>
+                            <ul class="ul">
+                                <li>my name is param</li>
+                                <li>my name is param</li>
+                                <li>my name is param</li>
+                            </ul>
+                            <div class="e1">This div element has width of 500px</div>
+                            <br>
+                            <div class="e2">This div element has max-width of 500px</div>
+                            <h1> my name is param </h1>
+                            <div class="container">
+                                <div class="item1">55555</div>
+                                <p class="item2">21111</p>
+                                <p class="item3">2222</p>
+                                <p class="item4>">3333</p>
+                            </div>
+                            
+
+    </body>

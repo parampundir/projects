@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel = "icon" href = 
+    "https://cdn.uconnectlabs.com/wp-content/uploads/sites/25/2020/04/J.png"
+        type = "image/x-icon">
+</head>
+
+<body>
+    <p id="js">my name is param</p>
+    <button type="button" onclick='document.getElementById("js").innerHTML = "Hello world"'>Click Me</button>
+    <p id="js2">my name is param</p>
+    <hr>
+    <button type="button" onclick="document.getElementById('js2').style.fontSize='35px'">Click
+        Me</button>
+    <p id="js3">my name is param</p>
+    <hr>
+    <button type="button" onclick="document.getElementById('js3').style.display='none'">Click
+        Me</button>
+    <p id="js4" style="display:none">my name is param</p>
+    <hr>
+
+    <button type="button" onclick="document.getElementById('js4').style.display='block'">ClickMe</button>
+    <hr>
+    <p id="js5"></p>
+    <script> document.getElementById("js5").innerHTML = "script";</script>
+    <hr>
+    <button onclick="window.print()">Click to print this page</button>
+    <script>//window.alert(" MY NAME IS PARAM")</script>
+    <p id="js6"></p>
+    <hr>
+    <script> document.getElementById("js6").innerHTML = 14 - 7;</script>
+    <script> document.write(7 + 2);</script>
+    <p id="js7"></p>
+    <script>
+        let x, y, z;
+        x = 100;
+        y = 7;
+        z = x + y;
+        document.getElementById("js7").innerHTML = z;
+    </script>
+    <script>//this is a java script comment</script>
+    <script>
+        /* this is
+         is multiple
+         line comment*/
+    </script>
+    <hr>
+    <p id="js8"></p>
+    <script>
+        var name = "Param Pundir";
+        var date = '7 august';
+        document.getElementById("js8").innerHTML = "<br>" + name + "<br>" + date;
+    </script>
+    <p id="js9"></p>
+    <script>
+        let text1 = "MY NAME IS ";
+
+        text1 += "PARAM";
+        document.getElementById("js9").innerHTML = text1;
+    </script>
+    <p id="js10"></p>
+    <!-- <script> 
+                            let x,y,z
+                             x = 7;
+                             y = 9;
+                             z = 7;
+                            document.getElementById("js10").innerHTML = (x == y) + "<br>" + (x == z);
+                            </script> -->
+    <p id="js11"></p>
+    <script>
+        document.getElementById("js11").innerHTML =
+            typeof "param"
+    </script>
+    <p id="js12"></p>
+    <script>
+        document.getElementById("js12").innerHTML =
+            typeof 7.7
+    </script>
+    <p id="js13"></p>
+    <script>
+        function jsf(p1, p2) { return p1 * p2; }
+        document.getElementById("js13").innerHTML = myFunction(25, 25);
+    </script>
+    <p id="js14"></p>
+    <script>
+        const car = { type: "i20", model: "5", color: "white" };
+        document.getElementById("js14").innerHTML = car.type;
+    </script>
+    <p id="js15"></p>
+    <script>
+        const person = {
+            firstname: "Param",
+            lastname: "Pundir",
+            fullname: function () { return this.firstname + " " + this.lastname; }
+        };
+        document.getElementById("js15").innerHTML = person.fullname();
+    </script>
+    <p id="js16"></p>
+    <button onclick="document.getElementById('js16').innerHTML=Date()">click to see what time it is</button>
+
+    </script>
+    <hr>
+    <p id="js17"></p>
+    <button onclick="displayDate()">time with function</button>
+    <script>
+        function displayDate() {
+            document.getElementById("js17").innerHTML = Date();
+        }
+    </script>
+    <p id="js18"></p>
+    <script>
+        let text = "123654987415596364633178654rhsrdrjdj";
+        document.getElementById("js18").innerHTML = text.length;
+    </script>
+    <p id="js19"></p>
+    <script>
+        let str = "Apple, Mango, Kiwi";
+        document.getElementById("js19").innerHTML = str.substr(-11);
+    </script>
+    <p id="js20">Please visit Microsoft</p>
+
+    <button onclick="jsf1()">click me</button>
+    <script>
+        function jsf1() {
+            let text = document.getElementById("js20").innerHTML;
+            document.getElementById("js20").innerHTML =
+                text.replace("Microsoft", "param html");
+        }
+    </script>
+    <p id="js21">please visit amazon and amazon</p>
+    <button onclick="jsf2()">Try it</button>
+
+    <script>
+        function jsf2() {
+            let text = document.getElementById("js21").innerHTML;
+            document.getElementById("js21").innerHTML =
+                text.replace(/amazon/g, "param html");
+        }
+    </script>
+    <hr>
+    <p id="js22"></p>
+    <script>
+        let str1 = "my name is param";
+        document.getElementById("js22").innerHTML = str1.indexOf("is");
+    </script>
+    <p id="js23"></p>
+    <script>
+        let str2 = "my name is param";
+        document.getElementById("js23").innerHTML = str2.lastIndexOf("name");
+    </script>
+    <p id="js24"></p>
+    <script>
+        let str3 = "my name is param";
+        document.getElementById("js24").innerHTML = str3.lastIndexOf("xyz");
+    </script>
+
+    <p id="js25"></p>
+</body>
+<script>
+    let str4 = "my name 'param' is param";
+    document.getElementById("js25").innerHTML = str4.indexOf("param", 15);
+</script>
+<p id="js26"></p>
+<script>
+    let str5 = "my name 'param' is param";
+    document.getElementById("js26").innerHTML = str5.lastIndexOf("param", 9);;
+</script>
+<p id="js27"></p>
+<script>
+    let str6 = "my name is 'param' param";
+    document.getElementById("js27").innerHTML = str6.search("param");
+</script>
+<p id="js28"></p>
+<script>
+    let text2 = "The rain in SPAIN stays mainly ain in the plain";
+    document.getElementById("js28").innerHTML = text2.match(/ain/g);
+</script>
+<p id="js29"></p>
+<script>
+    let text3 = "The rain in SPAIN stays mainly in the plain";
+    document.getElementById("js29").innerHTML = text3.match(/ain/gi);
+</script>
+<p id="js30"></p>
+<script>
+    let text4 = "hello world welcome to the universe.";
+    document.getElementById("js30").innerHTML = text4.includes("world");
+</script>
+<p id="js31"></p>
+<script>
+    let text5 = `Hello world!`;
+    document.getElementById("js31").innerHTML = text5;
+</script>
+<p id="js32"></p>
+<script>
+    let fname = "Param "
+    let lname = "Pundir"
+    let text6 = `welcome ${fname} ${lname}`
+    document.getElementById("js32").innerHTML = text6;
+</script>
+<p id="js33"></p>
+<script>
+    let price = 17;
+    let VAT = 0.25;
+    let total1 = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+    document.getElementById("js33").innerHTML = total1;
+</script>
+<p id="js34"></p>
+<script>
+    let header1 = "Templates Literals";
+    let tags1 = ["template literals", "hello world", "unordered list"];
+    let html1 = `<h2>${header1}</h2><ul>`;
+
+    for (const x of tags1) {
+        html1 += `<li>${x}</li>`;
+    }
+    html1 += `</ul>`;
+    document.getElementById("js34").innerHTML = html1;
+</script>
+<p id="js35"></p>
+<script>
+let x = 123e5;
+let y = 123e-5;
+document.getElementById("js35").innerHTML = x + "<br>" + y;
+</script>
+</body>
